@@ -30,7 +30,7 @@ export const login = async (req, res, next) => {
   }
 };
 
-export const register = async (req, res) => {
+export const register = async (req, res,next) => {
   try {
     const { name, email, password } = req.body;
 
@@ -53,7 +53,7 @@ export const register = async (req, res) => {
   }
 };
 
-export const getMyProfile = (req, res) => {
+export const getMyProfile = (req, res,next) => {
   try {
     res.status(200).json({
       success: "true",
